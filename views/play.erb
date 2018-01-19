@@ -6,18 +6,20 @@
 
 <div>
   <h2>
-    <%= $game.player_1.player_name %>: <%= @game.player_1.score %>
+    <%= $game.player_1.player_name %>: <%= @game.player_1.score %> HP
   </h2>
 </div>
 
 <div>
   <h2>
-    <%= $game.player_2.player_name %>: <%= @game.player_2.score %>
+    <%= $game.player_2.player_name %>: <%= @game.player_2.score %> HP
   </h2>
 </div>
 
 <div>
-  <%=@game.current_turn.player_name%>'s turn
+  <h3>
+    <%=@game.current_turn.player_name%>'s turn
+  </h3>
 </div>
 
 <div>

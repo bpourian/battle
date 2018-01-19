@@ -1,6 +1,6 @@
 <div>
   <h1>
-    <%= @game.player_1.player_name%> attacked <%= @game.player_2.player_name %>
+    <%= @game.current_turn.player_name%> attacked <%= @game.previous_turn.player_name %>
   </h1>
 </div>
 
@@ -10,6 +10,9 @@
   </h2>
 </div>
 
-<form action="/play" method="submit">
-  <input type="submit" value="Ok">
-</form>
+
+<div>
+  <form action="/play" method="post">
+    <input type="submit" value="Ok">
+  </form>
+</div>
