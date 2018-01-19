@@ -32,7 +32,7 @@ class Battle < Sinatra::Base
 
   post '/attack' do
     @game = $game
-    @game.attack(@game.previous_turn.player_name)
+    @game.attack(@game.previous_turn)
 
     redirect '/attack'
   end
